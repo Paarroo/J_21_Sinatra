@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <title>Créer un potin</title>
+    <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      position: relative;
+      min-height: 100vh;
+    }
+
+    h1 {
+      text-align: center;
+      color: #E7BD04FF;
+      margin-top: 70px;
+      font-size: 2.8em;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    }
+
+    p {
+      color: #08BBDFFF;
+      font-size: 1.5em;
+      margin: 20px 0;
+      padding: 15px;
+      background: rgba(255,255,255,0.8);
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    a {
+      color: #002FFFFF;
+      text-decoration: none;
+      font-size: 1.4em;
+      padding: 15px 30px;
+      background: linear-gradient(135deg, #E7BD04FF 0%, #08BBDFFF 100%);
+      color: white !important;
+      border-radius: 25px;
+      display: inline-block;
+      margin: 10px 0;
+      transition: all 0.3s ease;
+      min-width: 250px;
+    }
+
+    a:hover {
+      color: white !important;
+      transform: scale(1.1);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .link {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 80px;
+      gap: 20px;
+    }
+
+    h2 {
+      position: absolute;
+      bottom: 100px;
+      left: 50%;
+      transform: translateX(-50%) scale(1.6);
+      font-size: 2em;
+      background: linear-gradient(135deg, #E7BD04FF 0%, #08BBDFFF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    h2:hover {
+      transform: translateX(-50%) scale(1.8);
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Salut petite comère !</h1>
+
+    <div class="link">
+      <a href="/gossips/new/">Créer un gossip !</a>
+      <a href="/gossips/read/">Consulter un gossip !</a>
+    </div>
+
+    <h2>🏠</h2>
+  </body>
+</html>

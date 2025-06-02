@@ -1,0 +1,128 @@
+<html>
+  <head>
+    <title>Create a potin</title>
+    <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #E7BD04FF;
+      margin-top: 70px;
+      font-size: 2.8em;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    }
+
+    p {
+      color: #08BBDFFF;
+      font-size: 1.5em;
+      margin: 20px 0;
+      padding: 15px;
+      background: rgba(255,255,255,0.8);
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    form {
+      max-width: 500px;
+      margin: 0 auto 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .form-group {
+      margin-bottom: 25px;
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #333;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    input[type='text'] {
+      width: 100%;
+      padding: 15px;
+      border: 2px solid #e1e5e9;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: all 0.3s ease;
+      background-color: #f8f9fa;
+    }
+
+    input[type='text']:focus {
+      border-color: #E7BD04FF;
+      outline: none;
+      background-color: white;
+      box-shadow: 0 0 0 3px rgba(231, 189, 4, 0.1);
+    }
+
+    input[type='submit'] {
+      width: 100%;
+      padding: 15px 30px;
+      background: linear-gradient(135deg, #E7BD04FF 0%, #08BBDFFF 100%);
+      color: white;
+      border: none;
+      border-radius: 25px;
+      font-size: 1.2em;
+      cursor: pointer;
+      margin-top: 25px;
+      transition: all 0.3s ease;
+      font-weight: bold;
+    }
+
+    input[type='submit']:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    a {
+      color: white !important;
+      text-decoration: none;
+      font-size: 1.4em;
+      padding: 15px 30px;
+      background: linear-gradient(135deg, #E7BD04FF 0%, #08BBDFFF 100%);
+      border-radius: 25px;
+      display: inline-block;
+      margin-top: 40px;
+      transition: all 0.3s ease;
+    }
+
+    a:hover {
+      transform: scale(1.1);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Create a gossip ! 💬</h1>
+    <p>Share your gossip using the form below 👇</p>
+
+    <form action='/gossips/new/' method='POST'>
+      <div class="form-group">
+        <label for="author_name">Enter your name :</label>
+        <input type='text' id="author_name" name='author_name' placeholder="Your name..." />
+      </div>
+
+      <div class="form-group">
+        <label for="gossip_content">Share your gossip :</label>
+        <input type='text' id="gossip_content" name='gossip_content' placeholder="Tell us your gossip..." />
+      </div>
+
+      <input type="submit" value="Send Gossip" />
+    </form>
+
+    <a href="/">
+      🏠 Return to the main page
+    </a>
+  </body>
+</html>

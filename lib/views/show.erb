@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <title>Potin n°<%= params['id'] %></title>
+    <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #E7BD04FF;
+      margin-top: 70px;
+      font-size: 2.8em;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    }
+
+    p {
+      color: #08BBDFFF;
+      font-size: 1.5em;
+      margin: 20px 0;
+      padding: 15px;
+      background: rgba(255,255,255,0.8);
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    a {
+      color: #002FFFFF;
+      text-decoration: none;
+      font-size: 1.3em;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+
+    a:hover {
+      color: #1BAC04FF;
+      background-color: rgba(0, 47, 255, 0.1);
+      transform: scale(1.05);
+    }
+
+    .links-container {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .link {
+      font-size: 1.4em;
+      padding: 15px 30px;
+      background: linear-gradient(135deg, #E7BD04FF 0%, #08BBDFFF 100%);
+      color: white !important;
+      border-radius: 25px;
+      margin: 10px 0;
+    }
+
+    .link:hover {
+      color: white !important;
+      transform: scale(1.1);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Here you have potin's page N°<%= params['id'] %></h1>
+
+    <p><strong>Author :</strong> <%= @gossip.author %></p>
+    <p><strong>Potin :</strong> <%= @gossip.content %></p>
+
+    <div class="links-container">
+      <a href="/gossips/read/" class="link">
+        👈 Return to the potins main page
+      </a>
+
+      <a href="/" class="link">
+        🏠 Return to the main page
+      </a>
+    </div>
+  </body>
+</html>
